@@ -1,0 +1,418 @@
+:root {
+  /* Global Variables */
+  --main-color: #7d0579;
+  --card-color: #e9ebee;
+  --smoke: whitesmoke;
+  --base-font-size: 1em;
+  --base-line-height: 1.5;
+  --header-line-height: 1.25;
+  --image-background: #ffffb3;
+}
+/*-------------------------------------------------------------------------------------------------*/
+/* -----------------------Header section of the page--------------------------------------------- */
+/*-------------------------------------------------------------------------------------------------*/
+.masthead {
+  background-color: var(--main-color);
+  margin: 0px 0px 3px 0px;
+  border-bottom: solid 4px var(--main-color);
+  border-radius: 10px;
+  color: white;
+}
+.masthead h3 {
+  margin-top: 0px;
+}
+
+.centered {
+  justify-content: center;
+}
+header {
+  width: 85%;
+}
+.header-profile {
+  width: 100%;
+  text-align: center;
+}
+.header-profile img {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  display: inline;
+  margin: 15px 0px 0px 0px;
+}
+
+.header-profile h3 {
+  background-color: white;
+  color: var(--main-color);
+  font-size: 1.5em;
+  font-family: "Times New Roman", Times, serif;
+}
+.profile-title {
+  display: block;
+  font-size: 0.52em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  color: var(--smoke);
+  margin-left: 20px;
+}
+.nav li {
+  display: inline;
+  margin: 10px;
+  padding: 5px;
+  width: 100px;
+  background-color: var(--main-color);
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+.nav a:hover {
+  color: white;
+  background-color: var(--main-color);
+  font-weight: bold;
+}
+/* -----------------------End of Header section--------------------------------------------------- */
+/*-------------------------------------------------------------------------------------------------*/
+/* -----------------------Body and main container section-------------------------------------------- */
+body {
+  background: whitesmoke;
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  width: 96%;
+  padding-left: 0.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: 0 none;
+}
+
+.current-project {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background: var(--image-background);
+  padding: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.project-heading h2 {
+  font-family: "Yatra One", cursive;
+  border-bottom: dotted var(--main-color);
+}
+.main-image img {
+  width: 400px;
+  height: 300px;
+  box-shadow: 0 8px 16px 0 var(--main-color);
+}
+
+/* -----------------------End of Body and Main section--------------------------------------------------- */
+/*-------------------------------------------------------------------------------------------------*
+/* -----------------------About me section of the page-------------------------------------------- */
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  color: white;
+  width: 85%;
+  margin-top: 10px;
+}
+.contact-profile {
+  padding: 0px;
+  margin: 10px 0px 0px 0px;
+}
+.contact-profile h3,
+.contact-profile p,
+.contact-form h3 {
+  margin: 5px 30px;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*----------------------End of about me section--------------------------------------------------- */
+/*-------------------------------------------------------------------------------------------------*/
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: var(--main-color);
+  color: #fff;
+  margin-top: none;
+  border-color: #fff;
+}
+footer i {
+  margin-right: 10px;
+}
+.bottom-content h3 {
+  font-size: 1em;
+}
+/* ------------------------------------------------------------------------------------ */
+/* Styles for cards */
+.card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: var(--image-background);
+  padding: 1em;
+  /*Add Shadows to create the card effect*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 78%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 var(--main-color);
+  transform: scale(1.02);
+}
+.card-content p {
+  text-align: left;
+  padding: 0px 25px;
+  color: var(--main-color);
+  font-size: 1.02em;
+}
+.card img {
+  box-shadow: 0 8px 16px 0 var(--main-color);
+}
+.card h2 {
+  font-family: "Yatra One", cursive;
+  border-bottom: dotted var(--main-color);
+  color: var(--main-color);
+  font-size: 2.2em;
+}
+img {
+  width: 250px;
+  height: 250px;
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+.bottom-content {
+  text-align: left;
+  padding: 30px;
+  margin-top: 10px;
+  background: var(--main-color);
+  border-radius: 10px;
+  width: 72%;
+  color: white;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  width: 85%;
+  padding: 15px 0px;
+}
+.profile img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+.profile p {
+  color: #fff;
+}
+.profile h2 {
+  background-color: var(--smoke);
+  color: var(--main-color);
+}
+
+.centered,
+h2 {
+  text-align: center;
+}
+
+/* Find src URL and add in correct social media icon. */
+.social-media li a:before,
+.bottom-content li a:before {
+  font-family: "Fontawesome";
+  -webkit-font-smoothing: antialiased;
+  content: "\f08e";
+  font-size: 1.3em;
+}
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: #fff;
+  background-color: var(--smoke);
+  text-align: center;
+}
+.social-media li a {
+  color: var(--main-color);
+}
+.social-media li a[href*="twitter.com"]::before,
+.bottom-content li a[href*="twitter.com"]::before {
+  content: "\f099";
+}
+.social-media li a[href*="facebook.com"]::before,
+.bottom-content li a[href*="facebook.com"]::before {
+  content: "\f09a";
+}
+.social-media li a[href*="linkedin.com"]::before,
+.bottom-content li a[href*="linkedin.com"]::before {
+  content: "\f0e1";
+}
+.social-media li a[href*="youtube.com"]::before,
+.bottom-content li a[href*="youtube.com"]::before {
+  content: "\f167";
+}
+.social-media li a[href*="instagram.com"]::before,
+.bottom-content li a[href*="instagram.com"]::before {
+  content: "\f16d";
+}
+
+.social-media li,
+.bottom-content li {
+  list-style-type: none;
+  display: inline;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+.bottom-content a,
+.bottom-content li a {
+  color: white;
+}
+.social-media li a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+.bottom-content li a {
+  text-decoration: none;
+}
+/*------Replace the existing bullets with different icons from font awesome ---------*/
+.contact-profile ul li {
+  list-style: none;
+}
+
+.contact-profile ul li::before,
+.contact-profile ul li[class*="database"]::before,
+.contact-profile ul li[class*="html"]::before,
+.contact-profile ul li[class*="js"]::before,
+.contact-profile ul li[class*="reporting"]::before,
+.contact-profile ul li[class*="excel"]::before {
+  font-family: "Fontawesome";
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.4em;
+}
+.contact-profile ul li::before {
+  content: "\f109";
+}
+
+.contact-profile ul li[class*="database"]::before {
+  content: "\f1c0";
+}
+.contact-profile ul li[class*="html"]::before {
+  content: "\f13b";
+}
+.contact-profile ul li[class*="js"]::before {
+  content: "\f121";
+}
+.contact-profile ul li[class*="reporting"]::before {
+  content: "\f15c";
+}
+.contact-profile ul li[class*="excel"]::before {
+  content: "\f1c3";
+}
+/* Flexbox media queries */
+
+@media screen and (min-width: 40em) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -1em;
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 calc(44% - 0.5em);
+    margin-bottom: 1em;
+  }
+
+  .profile {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .cards {
+    margin-top: inherit;
+  }
+
+  .card {
+    flex: 0 1 calc(22% - 1em);
+    margin-bottom: 2em;
+  }
+  .current-project {
+    width: 98%;
+  }
+  .project-heading {
+    font-family: "Yatra One", cursive;
+    color: var(--main-color);
+    font-size: 1.5em;
+    padding: 0px 10px;
+    margin-top: 0px;
+  }
+  .project-heading p {
+    font-size: 0.6em;
+    line-height: 0.8;
+  }
+
+  .profile {
+    flex: 0 1 calc(20% - 1em);
+    width: 85%;
+    height: 100%;
+    margin-top: 0.5em;
+  }
+
+  .header-profile,
+  .about-me {
+    width: 100%;
+  }
+  .profile-image {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .bottom-content,
+  .about-me {
+    flex: 0 1 calc(75% - 1em);
+    margin-bottom: 0.5em;
+    width: 96%;
+    text-align: left;
+    padding: 5px 30px;
+  }
+  .bottom-content {
+    text-align: center;
+  }
+
+  .social-media {
+    width: 100%;
+    text-align: right;
+  }
+  .social-media li,
+  .bottom-content li,
+  .about-me li {
+    display: inline;
+    padding: 0px 2px;
+    font-size: 0.8em;
+  }
+
+  .masthead {
+    width: 100%;
+  }
+  .copyrite {
+    text-align: right;
+  }
+  footer p {
+    display: inline-block;
+    font-size: 0.8em;
+  }
+}
