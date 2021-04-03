@@ -16,7 +16,7 @@ This website was created using HTML and CSS. The main structure for the layout i
 
 Below is a screenshot of the header and current project section of the page. The **Header** contains my social media links as well as the page navigation links.
 
-![Homepage Screenshot](/assets/images/pageHeader.JPG)
+![Homepage Screenshot](/assets/images/pageheader.JPG)
 
 ---
 
