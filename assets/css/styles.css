@@ -232,7 +232,7 @@ h2 {
   -webkit-font-smoothing: antialiased;
   content: "\f08e";
   font-size: 1.3em;
-  font-weight: 900;
+  font-weight: 400;
 }
 .social-media {
   display: flex;
@@ -295,9 +295,10 @@ h2 {
 .contact-profile ul li[class*="js"]::before,
 .contact-profile ul li[class*="reporting"]::before,
 .contact-profile ul li[class*="excel"]::before {
-  font-family: "Fontawesome";
+  font-family: "Font Awesome 5 Brands";
   -webkit-font-smoothing: antialiased;
   font-size: 1.4em;
+  font-weight: 400;
 }
 .contact-profile ul li::before {
   content: "\f109";
