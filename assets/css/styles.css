@@ -232,6 +232,7 @@ h2 {
   -webkit-font-smoothing: antialiased;
   content: "\f08e";
   font-size: 1.3em;
+  font-weight: 900;
 }
 .social-media {
   display: flex;
