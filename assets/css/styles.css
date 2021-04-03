@@ -228,7 +228,7 @@ h2 {
 /* Find src URL and add in correct social media icon. */
 .social-media li a:before,
 .bottom-content li a:before {
-  font-family: "Fontawesome";
+  font-family: "Font Awesome 5 Brands";
   -webkit-font-smoothing: antialiased;
   content: "\f08e";
   font-size: 1.3em;
