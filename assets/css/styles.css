@@ -26,7 +26,7 @@
   justify-content: center;
 }
 header {
-  width: 85%;
+  width: 98%;
 }
 .header-profile {
   width: 100%;
@@ -92,21 +92,27 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
   background: var(--image-background);
   padding: 1em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   margin-top: 10px;
+  justify-content: center;
 }
 .project-heading h2 {
   font-family: "Yatra One", cursive;
   border-bottom: dotted var(--main-color);
 }
+.project-heading {
+  font-family: "Yatra One", cursive;
+  color: var(--main-color);
+}
 .main-image img {
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 250px;
   box-shadow: 0 8px 16px 0 var(--main-color);
+  padding-left: 0px;
 }
 
 /* -----------------------End of Body and Main section--------------------------------------------------- */
@@ -119,7 +125,7 @@ body {
   background-color: var(--main-color);
   border-radius: 10px;
   color: white;
-  width: 85%;
+  width: 98%;
   margin-top: 10px;
 }
 .contact-profile {
@@ -136,7 +142,7 @@ body {
 /*----------------------End of about me section--------------------------------------------------- */
 /*-------------------------------------------------------------------------------------------------*/
 footer {
-  width: 100%;
+  width: 82%;
   text-align: center;
   background-color: var(--main-color);
   color: #fff;
@@ -146,11 +152,15 @@ footer {
 footer i {
   margin-right: 10px;
 }
+.bottom-content {
+  font-size: 0.75em;
+}
 .bottom-content h3 {
-  font-size: 1em;
+  font-size: 0.9em;
 }
 /* ------------------------------------------------------------------------------------ */
 /* Styles for cards */
+
 .card {
   display: flex;
   flex-direction: column;
@@ -160,7 +170,7 @@ footer i {
   /*Add Shadows to create the card effect*/
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 78%;
+  width: 88%;
   border-radius: 10px;
   margin-top: 10px;
 }
@@ -184,8 +194,8 @@ footer i {
   font-size: 2.2em;
 }
 img {
-  width: 250px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -196,7 +206,7 @@ img {
   margin-top: 10px;
   background: var(--main-color);
   border-radius: 10px;
-  width: 72%;
+  width: 79%;
   color: white;
 }
 .profile {
@@ -304,25 +314,7 @@ h2 {
   content: "\f13b";
 }
 
-/* Commented out, the newest version of fontawesome icons are not rendering
-with the content codes below...TODO: troubleshoot and update code. */
-/* .contact-profile ul li[class*="database"]::before {
-  content: "\f13b";
-}
-.contact-profile ul li[class*="html"]::before {
-  content: "\f13b";
-}
-.contact-profile ul li[class*="js"]::before {
-  content: "\f121";
-}
-.contact-profile ul li[class*="reporting"]::before {
-  content: "\f15c";
-}
-.contact-profile ul li[class*="excel"]::before {
-  content: "\f1ea";
-} */
-/* Flexbox media queries */
-
+/* Media queries for responsive layout. */
 @media screen and (min-width: 40em) {
   .cards {
     display: flex;
@@ -342,6 +334,23 @@ with the content codes below...TODO: troubleshoot and update code. */
     display: flex;
     flex-wrap: wrap;
     width: 85%;
+  }
+  .current-project {
+    width: 96%;
+    margin-bottom: 20px;
+  }
+
+  .bottom-content,
+  .about-me {
+    flex: 0 1 calc(75% - 1em);
+    margin-bottom: 0.5em;
+    width: 93%;
+    text-align: left;
+    padding: 5px 30px;
+  }
+  .bottom-content {
+    text-align: center;
+    font-size: 0.8em;
   }
 }
 
@@ -395,6 +404,7 @@ with the content codes below...TODO: troubleshoot and update code. */
   }
   .bottom-content {
     text-align: center;
+    font-size: 1.1em;
   }
 
   .social-media {
