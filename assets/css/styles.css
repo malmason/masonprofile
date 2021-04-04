@@ -301,11 +301,13 @@ h2 {
   font-weight: 900;
 }
 .contact-profile ul li::before {
-  content: "\f109";
+  content: "\f13b";
 }
 
-.contact-profile ul li[class*="database"]::before {
-  content: "\f109";
+/* Commented out, the newest version of fontawesome icons are not rendering
+with the content codes below...TODO: troubleshoot and update code. */
+/* .contact-profile ul li[class*="database"]::before {
+  content: "\f13b";
 }
 .contact-profile ul li[class*="html"]::before {
   content: "\f13b";
@@ -317,8 +319,8 @@ h2 {
   content: "\f15c";
 }
 .contact-profile ul li[class*="excel"]::before {
-  content: "\f5fc";
-}
+  content: "\f1ea";
+} */
 /* Flexbox media queries */
 
 @media screen and (min-width: 40em) {
