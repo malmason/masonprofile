@@ -298,14 +298,14 @@ h2 {
   font-family: "Font Awesome 5 Brands";
   -webkit-font-smoothing: antialiased;
   font-size: 1.4em;
-  font-weight: 400;
+  font-weight: 900;
 }
 .contact-profile ul li::before {
   content: "\f109";
 }
 
 .contact-profile ul li[class*="database"]::before {
-  content: "\f1c0";
+  content: "\f109";
 }
 .contact-profile ul li[class*="html"]::before {
   content: "\f13b";
@@ -317,7 +317,7 @@ h2 {
   content: "\f15c";
 }
 .contact-profile ul li[class*="excel"]::before {
-  content: "\f1c3";
+  content: "\f5fc";
 }
 /* Flexbox media queries */
 
