@@ -4,10 +4,10 @@
   <title>Website Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./assets/css/styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
   <header class="masthead">
@@ -26,17 +26,73 @@
     </div> <!--.nav closing tag -->
     <div class="social-media">
       <ul>
-        <li><a href="http://twitter.com" target="_blank"><span class="screen-reader-text"></span></a></li>
-        <li><a href="http://facebook.com" target="_blank"><span class="screen-reader-text"></span></a></li>
-        <li><a href="http://linkedin.com" target="_blank"><span class="screen-reader-text"></span></a></li>
-        <li><a href="http://youtube.com" target="_blank"><span class="screen-reader-text"></span></a></li>
-        <li><a href="http://instagram.com" target="_blank"><span class="screen-reader-text"></span></a></li>
+        <li><a href="https://github.com/malmason" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/malcolm-mason-1491a31b9/" target="_blank"><span class="screen-reader-text"></span></a></li>
+        
       </ul>
     </div>
   </header><!--.masthead -->
 
   <main class="container">
-    <div class="current-project">
+    <div class="centered section-header">
+      <h2>School Projects</h2>
+    </div>
+    <div id="school-projects" class="row">
+      <section class="cards">
+        <article class="card">
+          <figure class="card-image">
+            <img class="proj-image" src="./assets/images/sportsbetting.jpg" alt="Statbadger sports betting" />
+          </figure>
+          <div id="proj1" class="proj-details card-front">
+            <h2>Statbadger</h2>
+            <p>
+              Statbadger <span class="group1">(Group Project 1)</span> is a sports betting simulator application. You can view the games of the day as well as place bets on the outcome.
+            </p>
+          </div>
+          <div class="centered"><a class="proj-link" href="https://greggd1991.github.io/SportsBets/" target="_blank">Statbadger</a><a class="github" href="https://github.com/greggd1991/SportsBets" target="_blank"><i class="fab fa-github"></i></a></div>
+        </article>
+        <article class="card">
+          <figure class="card-image">
+            <img class="proj-image" src="./assets/images/weather.jpg" alt="Weather Dashboard" />
+          </figure>
+          <div id="proj2" class="proj-details card-front">
+            <h2>Weather Dashboard</h2>
+            <p>
+              Weather dashboard is an application that allows you to enter in a city and state to get the current weather conditions along with a 5-day forecast. 
+            </p>
+          </div>
+          <div class="centered"><a class="proj-link" href="https://malmason.github.io/weather-api/" target="_blank">Weather</a><a class="github" href="https://github.com/malmason/weather-api" target="_blank"><i class="fab fa-github"></i></a></div>
+        </article>
+        <article class="card">
+          <figure class="card-image">
+            <img class="proj-image" src="./assets/images/workdayscheduler.jpg" alt="Workday Scheduler" />
+          </figure>
+          <div id="proj3" class="proj-details card-front">
+            <h2>Workday Scheduler</h2>
+            <p>
+              Workday Scheduler is a calendar application that accepts appointments in different time blocks for the current day and stores them locally.
+            </p>
+          </div>
+          <div class="centered"><a class="proj-link" href="https://malmason.github.io/workday-scheduler/" target="_blank">Scheduler</a><a class="github" href="https://github.com/malmason/workday-scheduler" target="_blank"><i class="fab fa-github"></i></a></div>
+        </article>
+        <article class="card">
+          <figure class="card-image">
+            <img class="proj-image" src="./assets/images/javascriptquiz.jpg" alt="Javascript Quiz" />
+          </figure>
+          <div id="proj3" class="proj-details card-front">
+            <h2>Javascript Quiz</h2>
+            <p>
+              Javascript quiz is a 10 question multiple-choice quiz that tests your knowledge of Javascript Fundamentals.
+            </p>
+          </div>
+          <div class="centered"><a class="proj-link" href="https://malmason.github.io/javascript-quiz/" target="_blank">Javascript</a><a class="github" href="https://github.com/malmason/javascript-quiz" target="_blank"><i class="fab fa-github"></i></a></div>
+        </article>
+      </section>
+    </div>
+    <div class="centered section-header">
+      <h2>Personal Projects</h2>
+    </div>
+    <div class="current-project row">
       <figure class="main-image">
         <img src="./assets/images/solace-candles.jpg" alt="Solace Umore candles" />
       </figure>
@@ -59,7 +115,7 @@
         </p>
       </div>
     </div>
-    <div class="centered">
+    <div class="centered row">
       <section id="projects" class="cards">
         <article class="card">
               <figure class="card-image">
@@ -129,7 +185,24 @@
           </div>
         </article>
       </section> <!--Closing tag for cards class section-->
-
+      <section class="profile-card">
+        <div class="card-col">
+          <figure class="img-col">
+            <img id="new-profile" src="./assets/images/profile-new.jpg">
+          </figure>
+        </div>
+        <div class="content-col">
+            <h4 class="profile-name">Malcolm Mason</h4>
+            <p id="my-title">FULL STACK WEB DEVELOPER</p>
+            <p>Email: malmason66@gmail.com</p>
+            <p>Phone: (203) 578-0892</p>
+            <p>
+              <a href="https://github.com/malmason" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/malcolm-mason-1491a31b9/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="./assets/docs/resume.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
+            </p>
+        </div>
+      </section>
     </div>
   </main> <!--Closing tag for container class-->
 
@@ -155,13 +228,14 @@
       <h3>Skills</h3>
       <p>
         <ul>
-          <li class="database"> - SQL Server Development</li>
-          <li class="database"> - T-SQL Programming</li>
-          <li class="database"> - Microsoft Access Database Design</li>
-          <li class="excel"> - Excel VBA Programming</li>
-          <li class="reporting"> - SSRS and Crystal Report Designing</li>
-          <li class="html"> - HTML/CSS</li>
-          <li class="js"> - Javascript</li>
+          <li class="database"><i class="fas fa-database"></i> - SQL Server Development</li>
+          <li class="database"><i class="fas fa-database"></i> - T-SQL Programming</li>
+          <li class="database"><i class="fas fa-database"></i> - Microsoft Access Databases</li>
+          <li class="excel"><i class="fas fa-file-excel"></i> - Excel VBA Programming</li>
+          <li class="reporting"><i class="fas fa-file-alt"></i> - SSRS Ad-Hoc Reporting</li>
+          <li class="html"><i class="fab fa-html5"></i> - HTML/CSS</li>
+          <li class="js"><i class="fab fa-js"></i> - Javascript</li>
+          <li class="js"><i class="fab fa-bootstrap"></i> - Bootstrap</li>
         </ul>
       </p>
     </div>
@@ -169,17 +243,17 @@
 
   <footer id="contact-me" class="bottom-content">
       <ul> 
-        <li><a href="http://twitter.com" target="_blank"><span class="screen-reader-text"></span></a></li>
-        <li><a href="http://facebook.com" target="_blank"><span class="screen-reader-text"></span></a></li>
-        <li><a href="http://linkedin.com" target="_blank"><span class="screen-reader-text"></span></a></li>
-        <li><a href="http://youtube.com" target="_blank"><span class="screen-reader-text"></span></a></li>
-        <li><a href="http://instagram.com" target="_blank"><span class="screen-reader-text"></span></a></li>
+        <li>
+          <a href="https://github.com/malmason" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/malcolm-mason-1491a31b9/" target="_blank"><span class="screen-reader-text"></span></a></li>
+        <li>
+          <a href="mailto:malmason66@gmail.com"><i class="fas fa-envelope-open" aria-hidden="true"> - Email</i></a>
+        </li>
+        <li>
+          <i class="fas fa-mobile-alt" aria-hidden="true"> - Phone: (203) 578-0892</i>
+      </li>
       </ul>
-    <p> 
-        <i class="fas fa-building" aria-hidden="true"> - 100 Some Drive, Waterbury, CT 06704</i>
-        <i class="fas fa-envelope-open" aria-hidden="true"> - Email</i>
-        <i class="fas fa-mobile-alt" aria-hidden="true"> - Phone: (203) 888-8888</i>
-    </p>
     <p class="copyrite"> Copyright &copy; 2021 Built using HTML and CSS</p>
   </footer> 
 </body>

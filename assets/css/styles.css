@@ -82,12 +82,26 @@ body {
   padding-left: 0.5%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+.section-header {
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 96%;
+  color: var(--main-color);
+}
 
 .container {
   width: 100%;
   margin: 0 none;
 }
 
+.proj-details {
+  width: 100%;
+}
+.proj-details:hover,
+.proj-image:hover {
+  cursor: pointer;
+}
 .current-project {
   display: flex;
   flex-direction: row;
@@ -103,16 +117,40 @@ body {
 .project-heading h2 {
   font-family: "Yatra One", cursive;
   border-bottom: dotted var(--main-color);
-}
-.project-heading {
-  font-family: "Yatra One", cursive;
   color: var(--main-color);
 }
+.group1 {
+  font-family: "Yatra One", cursive;
+}
+
 .main-image img {
   width: 300px;
   height: 250px;
   box-shadow: 0 8px 16px 0 var(--main-color);
   padding-left: 0px;
+}
+.proj-link:link,
+.proj-link:visited,
+.github {
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 15px;
+}
+.proj-link,
+.github {
+  border-radius: 8px;
+}
+.proj-link:hover,
+.github:hover {
+  background-color: white;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+.github {
+  margin-left: 10px;
 }
 
 /* -----------------------End of Body and Main section--------------------------------------------------- */
@@ -137,6 +175,44 @@ body {
 .contact-form h3 {
   margin: 5px 30px;
 }
+#new-profile {
+  width: 146px;
+  height: 184px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.profile-card {
+  max-width: 540px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+}
+.profile-name {
+  width: 95%;
+  margin-left: 10px;
+  padding-top: 0px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  color: var(--main-color);
+}
+
+.card-col {
+  flex: 1;
+  margin: -16px -40px -22px -40px;
+}
+.content-col {
+  flex: 2;
+  line-height: 0.9;
+}
+.content-col p {
+  font-size: 12px;
+}
+.img-col {
+  padding: 0px;
+}
 
 /*-------------------------------------------------------------------------------------------------*/
 /*----------------------End of about me section--------------------------------------------------- */
@@ -158,6 +234,25 @@ footer i {
 .bottom-content h3 {
   font-size: 0.9em;
 }
+
+.fas {
+  font-size: 16px;
+}
+.fab,
+.fa-file-pdf {
+  font-size: 20px;
+}
+.content-col p a i {
+  color: var(--main-color);
+}
+.content-col p a {
+  margin-right: 15px;
+}
+#my-title {
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--main-color);
+}
 /* ------------------------------------------------------------------------------------ */
 /* Styles for cards */
 
@@ -176,9 +271,9 @@ footer i {
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 var(--main-color);
-  transform: scale(1.02);
 }
-.card-content p {
+.card-content p,
+.proj-details p {
   text-align: left;
   padding: 0px 25px;
   color: var(--main-color);
@@ -191,13 +286,16 @@ footer i {
   font-family: "Yatra One", cursive;
   border-bottom: dotted var(--main-color);
   color: var(--main-color);
-  font-size: 2.2em;
+  font-size: 2em;
 }
 img {
   width: 230px;
   height: 230px;
 }
-
+.proj-image {
+  width: 250px;
+  height: auto;
+}
 /* ------------------------------------------------------------------------------------- */
 
 .bottom-content {
@@ -206,7 +304,7 @@ img {
   margin-top: 10px;
   background: var(--main-color);
   border-radius: 10px;
-  width: 79%;
+  width: 84%;
   color: white;
 }
 .profile {
@@ -299,9 +397,9 @@ h2 {
   list-style: none;
 }
 
-.contact-profile ul li::before,
-.contact-profile ul li[class*="database"]::before,
-.contact-profile ul li[class*="html"]::before,
+/* .contact-profile ul li::before,
+/* .contact-profile ul li[class*="database"]::before, */
+/* .contact-profile ul li[class*="html"]::before,
 .contact-profile ul li[class*="js"]::before,
 .contact-profile ul li[class*="reporting"]::before,
 .contact-profile ul li[class*="excel"]::before {
@@ -309,10 +407,10 @@ h2 {
   -webkit-font-smoothing: antialiased;
   font-size: 1.4em;
   font-weight: 900;
-}
-.contact-profile ul li::before {
+} */
+/* .contact-profile ul li::before {
   content: "\f13b";
-}
+} */
 
 /* Media queries for responsive layout. */
 @media screen and (min-width: 40em) {
@@ -322,7 +420,9 @@ h2 {
     justify-content: space-between;
     margin-top: -1em;
   }
-
+  .section-header {
+    width: 100%;
+  }
   .card {
     display: flex;
     flex-wrap: wrap;
